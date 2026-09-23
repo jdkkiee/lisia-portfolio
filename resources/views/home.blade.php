@@ -203,106 +203,83 @@
                     </span>
                 </div>
 
-                <h3 class="project-title">
-                    Laravel Web Application
-                </h3>
+                <article class="project-card project-featured">
+                    <div class="project-top">
+                        <span class="project-number">01</span>
+                        <span class="project-status">Coursework</span>
+                    </div>
 
-                <p class="project-description">
-                    A web application developed as part of my university
-                    coursework while learning Laravel, PHP, routing,
-                    database integration, and CRUD operations.
-                </p>
+                    <h3 class="project-title">Laravel Poliklinik</h3>
 
-                <div class="project-tech">
-                    <span class="tech">Laravel</span>
-                    <span class="tech">PHP</span>
-                    <span class="tech">MySQL</span>
-                    <span class="tech">Blade</span>
-                </div>
+                    <p class="project-description">
+                        A web application developed as part of my university coursework
+                        while learning Laravel, PHP, database integration, and CRUD operations.
+                    </p>
 
-                <div class="project-links">
-                    <a href="#" class="project-link">
-                        View project ↗
-                    </a>
-                </div>
+                    <div class="project-tech">
+                        <span class="tech">Laravel</span>
+                        <span class="tech">PHP</span>
+                        <span class="tech">MySQL</span>
+                        <span class="tech">Blade</span>
+                    </div>
+
+                    <div class="project-links">
+                        <a
+                            href="https://github.com/jdkkiee/laravel-poliklinik"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="project-link"
+                        >
+                            View project ↗
+                        </a>
+                    </div>
+                </article>
+
+                
+
+                
 
             </article>
 
 
             <article class="project-card">
-
                 <div class="project-top">
                     <span class="project-number">02</span>
-
-                    <span class="project-status">
-                        Coursework
-                    </span>
+                    <span class="project-status">Coursework</span>
                 </div>
 
-                <h3 class="project-title">
-                    Database Design
-                </h3>
+                <h3 class="project-title">Website Promo</h3>
 
                 <p class="project-description">
-                    A university project focused on relational database
-                    design, normalization, ER diagrams, relationships,
-                    and SQL queries.
+                    A university project focused on design, laravel and php.
                 </p>
 
                 <div class="project-tech">
+                    <span class="tech">LARAVEL</span>
                     <span class="tech">MySQL</span>
-                    <span class="tech">SQL</span>
-                    <span class="tech">ERD</span>
+                    <span class="tech">PHP</span>
+                    <span class="tech">Website Promo</span>
                 </div>
 
                 <div class="project-links">
-                    <a href="#" class="project-link">
+                    <a
+                        href="https://github.com/jdkkiee/website-promo.git"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="project-link"
+                    >
                         View project ↗
                     </a>
                 </div>
-
             </article>
+
+            
 
 
             <article class="project-card">
 
                 <div class="project-top">
                     <span class="project-number">03</span>
-
-                    <span class="project-status">
-                        Learning
-                    </span>
-                </div>
-
-                <h3 class="project-title">
-                    Algorithm Practice
-                </h3>
-
-                <p class="project-description">
-                    Programming exercises created while learning algorithms,
-                    complexity analysis, dynamic programming, and
-                    problem solving.
-                </p>
-
-                <div class="project-tech">
-                    <span class="tech">C</span>
-                    <span class="tech">Python</span>
-                    <span class="tech">Algorithms</span>
-                </div>
-
-                <div class="project-links">
-                    <a href="#" class="project-link">
-                        View project ↗
-                    </a>
-                </div>
-
-            </article>
-
-
-            <article class="project-card">
-
-                <div class="project-top">
-                    <span class="project-number">04</span>
 
                     <span class="project-status">
                         Personal
@@ -400,157 +377,197 @@
     </div>
 </section>
 
-{{-- CERTIFICATIONS --}}
-<section class="section" id="certifications">
-    <div class="container">
+```blade
+                    {{-- CERTIFICATIONS --}}
+                    <section class="section" id="certifications">
+                        <div class="container">
 
-        <div class="section-header">
-            <span class="section-number">05</span>
+                            <div class="section-header">
+                                <span class="section-number">05</span>
 
-            <h2 class="section-title">
-                Certifications
-            </h2>
-        </div>
+                                <h2 class="section-title">
+                                    Certifications
+                                </h2>
+                            </div>
 
-        <div class="section-content">
+                            <div class="section-content">
 
-            <p>
-                A collection of courses and learning programs I've completed
-                while exploring programming, AI, and technology.
-            </p>
+                                <p>
+                                    A collection of courses and learning programs I've completed
+                                    while exploring programming, AI, and technology.
+                                </p>
 
+                                <div class="certification-list">
 
-        <div class="certification-item">
-            <div>
-                <h3>Python Basics</h3>
+                                    {{-- 01 — Python Basics --}}
+                                    <div class="certification-item">
+                                        <div>
+                                            <h3>Python Basics</h3>
 
-                <div class="certification-meta">
-                <img src="{{ asset('images/coursera.png') }}" alt="Coursera">
-                <p>Coursera · 2026</p>
-                </div>
-            </div>
+                                            <div class="certification-meta">
+                                                <img
+                                                    src="{{ asset('images/coursera.png') }}"
+                                                    alt="Coursera"
+                                                    class="certification-logo"
+                                                >
 
-            <span>01</span>
-        </div>
+                                                <span>Coursera · 2026</span>
+                                            </div>
+                                        </div>
 
+                                        <div class="certification-right">
+                                            <span>01</span>
 
-         <div class="certification-item">
-            <div>
-                <h3>IBM SkillsBuild</h3>
-
-                <div class="certification-meta">
-                <img src="{{ asset('images/ibm.jpg') }}" alt="IBM">
-                <p>IBM · 2026</p>
-                </div>
-            </div>
-
-            <span>02</span>
-        </div>
-
-                   
-         <div class="certification-item">
-            <div>
-                <h3>Classifying Data Using IBM Granite</h3>
-
-                <div class="certification-meta">
-                <img src="{{ asset('images/ibm.jpg') }}" alt="IBM">
-                <p>IBM · 2026</p>
-                </div>
-            </div>
-
-            <span>03</span>
-        </div>        
-
-            
+                                            <a
+                                                href="{{ asset('certificates/python-basic.pdf') }}"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                class="certificate-link"
+                                            >
+                                                View certificate↗
+                                            </a>
+                                        </div>
+                                    </div>
 
 
-                <div class="certification-item">
-                    <div>
-                        <h3>
-                            Menciptakan Copilot Pribadi dengan Azure AI Foundry
-                        </h3>
-                        <div class="certification-meta">
-                        <img src="{{ asset('images/microsoft.webp') }}" alt="Microsoft">
-                        <p>Microsoft · 2025</p>
-                    </div>
+                                    {{-- 02 — Classifying Data Using IBM Granite --}}
+                                    <div class="certification-item">
+                                        <div>
+                                            <h3>Classifying Data Using IBM Granite</h3>
 
-                    <span>04</span>
-                </div>
+                                            <div class="certification-meta">
+                                                <img
+                                                    src="{{ asset('images/ibm.jpg') }}"
+                                                    alt="IBM"
+                                                    class="certification-logo"
+                                                >
 
+                                                <span>IBM · 2026</span>
+                                            </div>
+                                        </div>
 
-                
-            </div>
+                                        <div class="certification-right">
+                                            <span>02</span>
 
-        </div>
-
-    </div>
-</section>
-
-{{-- OUTSIDE CODE --}}
-<section class="section">
-    <div class="container">
-
-        <div class="section-header">
-            <span class="section-number">05</span>
-
-            <h2 class="section-title">
-                Outside the code
-            </h2>
-        </div>
-
-        <div class="section-content">
-
-            <p>
-                When I'm away from my laptop, I like drawing, designing,
-                painting, reading, creating content, and exploring new places.
-            </p>
-
-            <p>
-                I think these things also influence how I approach
-                technology — especially when it comes to visual design
-                and creating things that feel simple and useful.
-            </p>
-
-        </div>
-
-    </div>
-</section>
+                                            <a
+                                                href="{{ asset('certificates/Getting Started with AI.pdf') }}"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                class="certificate-link"
+                                            >
+                                                View certificate↗
+                                            </a>
+                                        </div>
+                                    </div>
 
 
-{{-- CONTACT --}}
-<section class="contact" id="contact">
-    <div class="container">
+                                    {{-- 03 — Microsoft Azure AI Foundry --}}
+                                    <div class="certification-item">
+                                        <div>
+                                            <h3>
+                                                Menciptakan Copilot Pribadi dengan Azure AI Foundry
+                                            </h3>
 
-        <h2>
-            Let's build something.
-        </h2>
+                                            <div class="certification-meta">
+                                                <img
+                                                    src="{{ asset('images/microsoft.webp') }}"
+                                                    alt="Microsoft"
+                                                    class="certification-logo"
+                                                >
 
-        <p>
-            I'm currently learning, building projects, and looking
-            for opportunities to grow through real-world experience.
-        </p>
+                                                <span>Microsoft · 2025</span>
+                                            </div>
+                                        </div>
 
-        <div class="hero-buttons">
+                                        <div class="certification-right">
+                                            <span>03</span>
 
-            <a
-                href="mailto:"
-                class="btn btn-primary"
-            >
-                Get in touch
-            </a>
+                                            <a
+                                                href="{{ asset('certificates/Menciptakan copailot.pdf') }}"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                class="certificate-link"
+                                            >
+                                                View certificate↗
+                                            </a>
+                                        </div>
+                                    </div>
 
-            <a
-                href="https://www.linkedin.com/in/lisia-zahwa-alifa-9136a0386/"
-                target="_blank"
-                class="btn btn-secondary"
-            >
-                LinkedIn ↗
-            </a>
+                                </div>
 
-        </div>
+                            </div>
 
-    </div>
-</section>
+                        </div>
+                    </section>
+                    {{-- END CERTIFICATIONS --}}
+                    ```
+
+
+                    {{-- OUTSIDE CODE --}}
+                    <section class="section">
+                        <div class="container">
+
+                            <div class="section-header">
+                                <span class="section-number">05</span>
+
+                                <h2 class="section-title">
+                                    Outside the code
+                                </h2>
+                            </div>
+
+                            <div class="section-content">
+
+                                <p>
+                                    When I'm away from my laptop, I like drawing, designing,
+                                    painting, reading, creating content, and exploring new places.
+                                </p>
+
+                                <p>
+                                    I think these things also influence how I approach
+                                    technology — especially when it comes to visual design
+                                    and creating things that feel simple and useful.
+                                </p>
+
+                            </div>
+
+                        </div>
+                    </section>
+
+
+                    {{-- CONTACT --}}
+                    <section class="contact" id="contact">
+                        <div class="container">
+
+                            <h2>
+                                Let's build something.
+                            </h2>
+
+                            <p>
+                                I'm currently learning, building projects, and looking
+                                for opportunities to grow through real-world experience.
+                            </p>
+
+                            <div class="hero-buttons">
+
+                                <a
+                                    href="mailto:lisiazahwaalifa@gmail.com"
+                                    class="btn btn-primary"
+                                >
+                                    Get in touch
+                                </a>
+
+                                <a
+                                    href="https://www.linkedin.com/in/lisia-zahwa-alifa-9136a0386/"
+                                    target="_blank"
+                                    class="btn btn-secondary"
+                                >
+                                    LinkedIn ↗
+                                </a>
+
+                            </div>
+
+                        </div>
+                    </section>
 
 
 <footer class="footer">
