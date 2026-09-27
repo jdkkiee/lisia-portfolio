@@ -196,7 +196,7 @@
             <article class="project-card project-featured">
 
                 <div class="project-top">
-                    <span class="project-number">01</span>
+                    <span class="project-number"></span>
 
                     <span class="project-status">
                         Coursework

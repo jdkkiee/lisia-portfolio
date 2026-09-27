@@ -545,4 +545,31 @@ a {
     font-size: 13px;
 }
 
+.certification-right {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
 
+.certificate-link {
+    font-size: 13px;
+    font-weight: 500;
+    white-space: nowrap;
+    transition: opacity 0.2s ease;
+}
+
+.certificate-link:hover {
+    opacity: 0.55;
+}
+
+@media (max-width: 768px) {
+    .certification-right {
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 8px;
+    }
+
+    .certificate-link {
+        font-size: 12px;
+    }
+}
